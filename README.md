@@ -1,6 +1,9 @@
 # Electrochemistry
 Simple functions for processing electrochemical lab data
 
+Dependencies:
+- `pip install numpy`
+
 # General
 - EChem follows an object-oriented approach: Every measurement you import is an instance of one of the classes defined below, e.g. `CV`, `CP` etc. All operations that you can perform on a measurement are methods of these classes.
 - All physical units are assumed to be in basic SI units without prefixes, ie Volt, Ampere, Ohm etc.
