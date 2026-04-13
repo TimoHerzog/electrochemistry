@@ -19,7 +19,7 @@ class test_cv(unittest.TestCase):
     # getCurrentAt
     def test_getCurrentAt_correctValue(self):
         testInst = cv.CV(np.array([0.1, 0.2, 0.3]), np.array([0.4, 0.6, 0.8]))
-        self.assertEqual(testInst.getCurrentAt(0.16, 0.4), 20) #Error 20 instead of 0.6
+        self.assertEqual(testInst.getCurrentAt(0.16, 0.4), 0.6) 
 
     def test_getCurrentAt_farValue(self):
         testInst = cv.CV(np.array([0.1, 0.2, 0.3]), np.array([0.4, 0.6, 0.8]))
